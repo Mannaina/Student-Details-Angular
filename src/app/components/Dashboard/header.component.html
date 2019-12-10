@@ -1,16 +1,4 @@
 <style>
-  :host {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    font-size: 14px;
-    color: #333;
-    box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-
-  .card svg.material-icons path {
-    fill: #888;
-  }
 
   .card-container {
     display: flex;
@@ -34,73 +22,28 @@
     transition: all 0.2s ease-in-out;
     line-height: 24px;
   }
-
-  .card-container .card:not(:last-child) {
-    margin-right: 0;
-  }
-
   .card.card-small {
     height: 16px;
     width: 168px;
-  }
-
-  .card-container .card:not(.highlight-card) {
+    background-color: lightblue;
     cursor: pointer;
   }
 
-  .card-container .card:not(.highlight-card):hover {
-    transform: translateY(-3px);
-    box-shadow: 0 4px 17px rgba(black, 0.35);
-  }
+  table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
 
-  .card-container .card:not(.highlight-card):hover .material-icons path {
-    fill: rgb(105, 103, 103);
-  }
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
 
-  .card.highlight-card {
-    background-color: #1976d2;
-    color: white;
-    font-weight: 600;
-    border: none;
-    width: auto;
-    min-width: 30%;
-    position: relative;
-  }
-
-  .card.card.highlight-card span {
-    margin-left: 60px;
-  }
-
-  /* Responsive Styles */
-
-  @media screen and (max-width: 767px) {
-
-    .card-container>*:not(.circle-link),
-    .terminal {
-      width: 100%;
-    }
-
-    .card:not(.highlight-card) {
-      height: 16px;
-      margin: 8px 0;
-    }
-
-    .card.highlight-card span {
-      margin-left: 72px;
-    }
-
-    svg#rocket-smoke {
-      right: 120px;
-      transform: rotate(-5deg);
-    }
-  }
-
-  @media screen and (max-width: 575px) {
-    svg#rocket-smoke {
-      display: none;
-      visibility: hidden;
-    }
-  }
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
 </style>
 
 <h2 class="card-container">Student Details</h2>
@@ -111,5 +54,86 @@
     </svg>
     <span>Add</span>
   </div>
+</div>
+<div>
+<table>
+  <tr>
+    <th>Student Name</th>
+    <th>Contact Number</th>
+    <th>Father Name</th>
+    <th>Mother Name</th>
+    <th>Email</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>9876543211</td>
+    <td>abc</td>
+    <td>xyz</td>
+    <td>abc@gmail.com</td>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>9876543211</td>
+    <td>abc</td>
+    <td>xyz</td>
+    <td>abc@gmail.com</td>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>9876543211</td>
+    <td>abc</td>
+    <td>xyz</td>
+    <td>abc@gmail.com</td>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>9876543211</td>
+    <td>abc</td>
+    <td>xyz</td>
+    <td>abc@gmail.com</td>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>9876543211</td>
+    <td>abc</td>
+    <td>xyz</td>
+    <td>abc@gmail.com</td>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>9876543211</td>
+    <td>abc</td>
+    <td>xyz</td>
+    <td>abc@gmail.com</td>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>9876543211</td>
+    <td>abc</td>
+    <td>xyz</td>
+    <td>abc@gmail.com</td>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>9876543211</td>
+    <td>abc</td>
+    <td>xyz</td>
+    <td>abc@gmail.com</td>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>9876543211</td>
+    <td>abc</td>
+    <td>xyz</td>
+    <td>abc@gmail.com</td>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>9876543211</td>
+    <td>abc</td>
+    <td>xyz</td>
+    <td>abc@gmail.com</td>
+  </tr>
+</table>
 </div>
 <router-outlet></router-outlet>
