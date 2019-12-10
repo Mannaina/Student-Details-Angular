@@ -1,0 +1,38 @@
+<form [formGroup]="newUserForm">
+    <div>
+        <label>
+            First Name:
+            <input type="text" formControlName="firstName">
+        </label>
+        <br>
+        <label>
+            Last Name:
+            <input type="text" formControlName="lastName">
+        </label>
+        <br>
+        <label>
+            email:
+            <input type="text" formControlName="email">
+        </label>
+        <br>
+        <label>
+            Father Name
+            <input type="text" formControlName="fatherName">
+        </label>
+        <br>
+        <label>
+            Mother Name
+            <input type="text" formControlName="motherName">
+        </label>
+        <br>
+        <label>
+            Phone Number
+            <input type="number" formControlName="phoneNumber">
+        </label>
+        <br>
+    </div>
+    <div>
+        <button type="button" color="primary"> Cancel</button>
+        <button color="primary" [disabled]="newUserForm.invalid" (click)="createUser()" color="primary">Create User</button>
+    </div>
+</form>
