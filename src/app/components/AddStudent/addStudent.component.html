@@ -22,13 +22,11 @@
     }
 
     .cancel {
-        width: 100%;
-        background-color: gray;
-        color: white;
-        padding: 14px 20px;
-        margin: 8px 0;
-        border: none;
-        border-radius: 4px;
+        width: 8%;
+        color: black;
+        padding: 8px 11px;
+        margin: 10px 0;
+        border-radius: 4px solid;
         cursor: pointer;
     }
 
@@ -41,6 +39,7 @@
 
 
 <form [formGroup]="newUserForm">
+    <button type="button" class="cancel" routerLink='/'> back</button>
     <div class="container">
         <label>
             First Name:
@@ -75,6 +74,5 @@
     </div>
     <div>
         <button class="submit" [disabled]="newUserForm.invalid" (click)="createUser()">Create User</button>
-        <button type="button" class="cancel" routerLink='/'> Cancel</button>
     </div>
 </form>
